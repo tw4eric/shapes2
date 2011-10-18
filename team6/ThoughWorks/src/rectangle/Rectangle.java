@@ -1,6 +1,6 @@
 package rectangle;
 
-public class Rectangle 
+public class Rectangle implements Shape
 {
 	public Rectangle(double length, double breadth)
 	{
@@ -32,4 +32,12 @@ public class Rectangle
 	
 	private double length;
 	private double breadth;
+	@Override
+	public void drawShape() {
+		// TODO Auto-generated method stub
+		System.out.println("length of the Rect is: "+length);
+		System.out.println("Breadth of the Rect is: "+breadth);
+		System.out.println("Area of the Rect is: "+length*breadth);
+		System.out.println("Perimeter of the Rect is: "+2*(length+breadth));
+	}
 }
