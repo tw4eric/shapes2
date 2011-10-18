@@ -43,7 +43,7 @@ public class Rectangle {
 		return area;
 	}
 	
-	public void calcuateArea()
+	public void calcuateAreaOfRectangle()
 	{
 		area = length*breadth;
 	}
