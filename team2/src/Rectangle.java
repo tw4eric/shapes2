@@ -4,13 +4,14 @@ public class Rectangle extends Shape{
 	private int breadth;
 	
 	public Rectangle(int length, int breadth) {
-		this.length=length;
-		this.breadth=breadth;
+		this.length = length;
+		this.breadth = breadth;
 		
 	}
 	
 	@Override
 	public void display() {
+		System.out.println("Rectangle:");
 		System.out.println("Length: "+length);
 		System.out.println("Breadth: "+breadth);
 		System.out.println("Area: "+length*breadth);
