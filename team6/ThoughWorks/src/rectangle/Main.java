@@ -7,7 +7,7 @@ public class Main
 		try
 		{
 			
-			if (args == null || args.length != 2)
+			/*if (args == null || args.length != 2)
 			{
 				System.out.println("Usage : java Main <lenght> <breadth>");
 				System.exit(1);
@@ -20,11 +20,15 @@ public class Main
 			{
 				System.out.println("Length and Breadth can't be zero or negative");
 				System.exit(1);
-			}
+			}*/
 			
-			Rectangle rectangle = new Rectangle(length, breadth);
+			Shape rectangle = new Rectangle(4, 5);
 			
-			rectangle.drawRectangle();
+			rectangle.drawShape();
+			
+			
+			Shape shape = new Circle(4);
+			shape.drawShape();
 		
 		}
 		catch(NumberFormatException e)
