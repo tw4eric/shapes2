@@ -1,5 +1,5 @@
 package com.shapes.interfaces;
 
 public interface Shape {
-public double draw();
+public void draw(Bitmap bitmap);
 }

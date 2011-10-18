@@ -10,10 +10,9 @@ public class Circle implements Shape {
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
-	public double draw()
+	public void draw(Bitmap bitmap)
 	{
-		System.out.println("Radius"+this.getRadius());
-		System.out.println("Radius"+(3.14 * this.getRadius()*this.getRadius()));
-		return (3.14 * this.getRadius()*this.getRadius());
+                bitmap.drawArea("Radius = " + radius + "Area is = " + (22/7.0)*radius*radius);
+                bitmap.drawShape("Radius = " + radius + "Area is = " + (22/7.0)*radius*radius);
 	}
 }
