@@ -11,12 +11,26 @@ public class TW {
 		rect.area=rect.length*rect.breadth;
 		rect.display();
 		
+		new Circle(10).display();
+		
 				
 		
 	}
 
 }
 
+class Circle {
+	int radius;
+	
+	Circle(int radius) {
+		this.radius = radius;
+	}
+	
+	public void display() {
+		System.out.println("radius is : "  + radius);
+		System.out.println("aread is : " + Math.PI*radius*radius);
+	}
+}
 class Rectangle {
 	
 	int length;
