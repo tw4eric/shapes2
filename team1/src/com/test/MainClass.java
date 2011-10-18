@@ -13,6 +13,8 @@ public class MainClass {
 		
 		Circle circle = new Circle();
 		
+		Square square = new Square();
+		
 		length = getPositiveValue(length);
 		breadth = getPositiveValue(breadth);
 		radius = getPositiveValue(radius);
@@ -20,12 +22,17 @@ public class MainClass {
 		
 		rectangle.setLength(length);
 		rectangle.setBreadth(breadth);
-		
 		rectangle.calcuateAreaOfRectangle();
 		
 		circle.setRadius(radius);
 		circle.calcuateAreaOfCircle(radius);
+	
+		BitMap bmp = new BitMap();
 		
+		((Shape) rectangle).draw(bmp);
+		bmp.display();
+		
+		/*
 		System.out.println("The length of rectangle is :" + length);
 		System.out.println("The breadth of rectangle is :" + breadth);
 		System.out.println("The Area of rectangle is :" + rectangle.getArea());
@@ -33,7 +40,7 @@ public class MainClass {
 		System.out.println("The radius of circle is :" + radius);
 		System.out.println("The Area of circle is :" + circle.getArea());
 		
-		
+		*/
 	}
 	
 	public static double getPositiveValue(double value)

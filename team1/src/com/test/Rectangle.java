@@ -1,6 +1,6 @@
 package com.test;
 
-public class Rectangle {
+public class Rectangle extends Shape {
 	
 	private double length;
 	
@@ -48,4 +48,14 @@ public class Rectangle {
 		area = length*breadth;
 	}
 
+	@Override
+	public void draw(BitMap bmp) {
+		bmp.setDescription(getDescription());
+	}
+
+	public String getDescription()
+	{
+		return "Rectangle: length : " + length + " breadth : " + breadth;
+	}
+	
 }

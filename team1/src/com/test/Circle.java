@@ -1,6 +1,6 @@
 package com.test;
 
-public class Circle {
+public class Circle extends Shape {
 	
 	private double radius;
 	
@@ -33,6 +33,15 @@ public class Circle {
 	public void calcuateAreaOfCircle(double radius) {
 		this.area = (22/7)*radius*radius;
 	}
-	
+
+	@Override
+	public void draw(BitMap bmp) {
+		bmp.setDescription(getDescription());
+	}
+
+	public String getDescription()
+	{
+		return "Circle: radius : " + radius;
+	}
 	
 }
